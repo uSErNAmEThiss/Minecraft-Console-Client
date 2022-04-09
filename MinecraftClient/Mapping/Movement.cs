@@ -81,7 +81,7 @@ namespace MinecraftClient.Mapping
         /// <param name="falling">Specify if performing falling steps</param>
         /// <param name="stepsByBlock">Amount of steps by block</param>
         /// <returns>A list of locations corresponding to the requested steps</returns>
-        public static Queue<Location> Move2Steps(Location start, Location goal, ref double motionY, bool falling = false, int stepsByBlock = 8)
+        public static Queue<Location> Move2Steps(Location start, Location goal, ref double motionY, bool falling = false, int stepsByBlock = 4)
         {
             if (stepsByBlock <= 0)
                 stepsByBlock = 1;
